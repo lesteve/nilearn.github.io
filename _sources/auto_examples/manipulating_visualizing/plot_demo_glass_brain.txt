@@ -24,6 +24,16 @@ See :ref:`plotting` for more plotting functionalities.
             :scale: 47
 
 
+**Script output**:
+
+.. rst-class:: sphx-glr-script-out
+
+  ::
+
+    Downloading data from http://brainomics.cea.fr/localizer/brainomics_data_3.zip ...
+    ...done. (1 seconds, 0 min)
+    Extracting data from /home/lesteve/nilearn_data/brainomics_localizer/277a21fd425ce45b4bf49a46eeea2078/brainomics_data_3.zip...
+       ...done.
 
 
 **Python source code:** :download:`plot_demo_glass_brain.py <plot_demo_glass_brain.py>`
@@ -31,6 +41,6 @@ See :ref:`plotting` for more plotting functionalities.
 .. literalinclude:: plot_demo_glass_brain.py
     :lines: 7-
 
-**Total running time of the example:**  0.93 seconds
-( 0 minutes  0.93 seconds)
+**Total running time of the example:**  2.12 seconds
+( 0 minutes  2.12 seconds)
     

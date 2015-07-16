@@ -45,22 +45,24 @@ with the highest values.
 
   ::
 
-    First subject resting-state nifti image (4D) is located at: /home/varoquau/nilearn_data/adhd/data/3902469/3902469_rest_tshift_RPI_voreg_mni.nii.gz
-    [NiftiMapsMasker.fit_transform] loading regions from /home/varoquau/nilearn_data/msdl_atlas/MSDL_rois/msdl_rois.nii
-    [NiftiMapsMasker.fit_transform] loading images from /home/varoquau/nilearn_data/adhd/data/3902469/3902469_rest_tshift_RPI_voreg_mni.nii.gz
-    [NiftiMapsMasker.fit_transform] resampling labels
-    [Memory]    0.0s, 0.0min: Loading resample_img...
-    ________________________________________resample_img cache loaded - 0.2s, 0.0min
-    [NiftiMapsMasker.fit_transform] extracting region signals
-    [Memory]    0.3s, 0.0min: Loading img_to_signals_maps...
-    _________________________________img_to_signals_maps cache loaded - 0.0s, 0.0min
-    [NiftiMapsMasker.fit_transform] cleaning extracted signals
+    First subject resting-state nifti image (4D) is located at: /home/lesteve/nilearn_data/adhd/data/0010042/0010042_rest_tshift_RPI_voreg_mni.nii.gz
+    [NiftiMapsMasker.fit_transform] loading regions from /home/lesteve/nilearn_data/msdl_atlas/MSDL_rois/msdl_rois.nii
+    Resampling maps
     ________________________________________________________________________________
-    [Memory] Calling nilearn.signal.clean...
-    clean(array([[ 35332.876159, ...,  37750.492014],
-           ..., 
-           [ 35038.924687, ...,  37643.851985]]), standardize=True, detrend=False, confounds=['/home/varoquau/nilearn_data/adhd/data/3902469/3902469_regressors.csv'], low_pass=None, t_r=None, high_pass=None)
-    ____________________________________________________________clean - 0.0s, 0.0min
+    [Memory] Calling nilearn.image.resampling.resample_img...
+    resample_img(<nibabel.nifti1.Nifti1Image object at 0x7f7c3f1c7f50>, target_shape=(61, 73, 61), target_affine=array([[  -3.,   -0.,   -0.,   90.],
+           [  -0.,    3.,   -0., -126.],
+           [   0.,    0.,    3.,  -72.],
+           [   0.,    0.,    0.,    1.]]), interpolation='continuous')
+    _____________________________________________________resample_img - 2.9s, 0.0min
+    ________________________________________________________________________________
+    [Memory] Calling nilearn.input_data.nifti_maps_masker._extract_signals...
+    _extract_signals('/home/lesteve/nilearn_data/adhd/data/0010042/0010042_rest_tshift_RPI_voreg_mni.nii.gz', 
+    <nibabel.nifti1.Nifti1Image object at 0x7f7c540cc750>, None, None, True, False, None, None, ['/home/lesteve/nilearn_data/adhd/data/0010042/0010042_regressors.csv'], Memory(cachedir='nilearn_cache/joblib'), 1, resample_on_maps=False, mask_img=None, verbose=5)
+    Loading images: /home/lesteve/nilearn_data/adhd/data/0010042/0010042_rest_tshift_RPI_voreg_mni.nii.gz
+    Extracting maps signals
+    Cleaning extracted signals
+    __________________________________________________extract_signals - 4.4s, 0.1min
 
 
 **Python source code:** :download:`plot_probabilistic_atlas_extraction.py <plot_probabilistic_atlas_extraction.py>`
@@ -68,6 +70,6 @@ with the highest values.
 .. literalinclude:: plot_probabilistic_atlas_extraction.py
     :lines: 22-
 
-**Total running time of the example:**  1.52 seconds
-( 0 minutes  1.52 seconds)
+**Total running time of the example:**  8.55 seconds
+( 0 minutes  8.55 seconds)
     

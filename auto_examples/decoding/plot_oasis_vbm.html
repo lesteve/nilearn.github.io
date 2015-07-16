@@ -26,7 +26,7 @@
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <script type="text/javascript" src="../../_static/copybutton.js"></script>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
-    <link rel="top" title="Machine learning for NeuroImaging" href="../../index.html" />
+    <link rel="top" title="Machine learning for NeuroImaging" href="../../user_guide.html" />
 <meta content="True" name="HandheldFriendly">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <meta name="keywords" content="nilearn, neuroimaging, python, neuroscience, machinelearning">
@@ -89,7 +89,7 @@ $(function () {
     </script>
 
   </head>
-  <body>
+  <body role="document">
 <div id="logo-banner">
   <div class="logo">
     <a href="../../index.html">
@@ -144,7 +144,7 @@ $(function () {
 
 
 
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -159,7 +159,7 @@ $(function () {
  
       </ul>
     </div>
-      <div class="sphinxsidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
 
 
@@ -192,7 +192,7 @@ $(function () {
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="voxel-based-morphometry-on-oasis-dataset">
 <span id="example-decoding-plot-oasis-vbm-py"></span><h1>Voxel-Based Morphometry on Oasis dataset<a class="headerlink" href="#voxel-based-morphometry-on-oasis-dataset" title="Permalink to this headline">¶</a></h1>
@@ -229,19 +229,19 @@ much clearer view of the important regions.</p>
 </ul>
 <p><strong>Script output</strong>:</p>
 <div class="sphx-glr-script-out highlight-python"><div class="highlight"><pre>Warning: Could not find dataset description.
-First gray-matter anatomy image (3D) is located at: /home/varoquau/nilearn_data/oasis1/OAS1_0001_MR1/mwrc1OAS1_0001_MR1_mpr_anon_fslswapdim_bet.nii.gz
-First white-matter anatomy image (3D) is located at: /home/varoquau/nilearn_data/oasis1/OAS1_0001_MR1/mwrc2OAS1_0001_MR1_mpr_anon_fslswapdim_bet.nii.gz
+First gray-matter anatomy image (3D) is located at: /home/lesteve/nilearn_data/oasis1/OAS1_0001_MR1/mwrc1OAS1_0001_MR1_mpr_anon_fslswapdim_bet.nii.gz
+First white-matter anatomy image (3D) is located at: /home/lesteve/nilearn_data/oasis1/OAS1_0001_MR1/mwrc2OAS1_0001_MR1_mpr_anon_fslswapdim_bet.nii.gz
 100 samples, 141701 features
 ANOVA + SVR
 === ANOVA ===
-Prediction accuracy: 0.740289
+Prediction accuracy: 0.740290
 
 Massively univariate model
 
-282 detections
+286 detections
 </pre></div>
 </div>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_oasis_vbm.py"><tt class="xref download docutils literal"><span class="pre">plot_oasis_vbm.py</span></tt></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_oasis_vbm.py"><code class="xref download docutils literal"><span class="pre">plot_oasis_vbm.py</span></code></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="c"># Authors: Elvis Dhomatob, &lt;elvis.dohmatob@inria.fr&gt;, Apr. 2014</span>
 <span class="c">#          Virgile Fritsch, &lt;virgile.fritsch@inria.fr&gt;, Apr 2014</span>
 <span class="c">#          Gael Varoquaux, Apr 2014</span>
@@ -372,8 +372,8 @@ Massively univariate model
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  51.82 seconds
-( 0 minutes  51.82 seconds)</p>
+<p><strong>Total running time of the example:</strong>  52.76 seconds
+( 0 minutes  52.76 seconds)</p>
 </div>
 </div>
 
@@ -383,7 +383,7 @@ Massively univariate model
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -400,7 +400,7 @@ Massively univariate model
     </div>
     <div class="footer">
             &copy; The nilearn developers 2010-2015.
-          Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.
+          Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.3.1.
         <span style="padding-left: 5ex;">
           <a href="../../_sources/auto_examples/decoding/plot_oasis_vbm.txt"
         	 rel="nofollow">Show this page source</a>

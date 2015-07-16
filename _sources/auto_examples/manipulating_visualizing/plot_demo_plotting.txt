@@ -46,8 +46,12 @@ see :ref:`plotting` for more details.
 
   ::
 
-    First subject anatomical nifti image (3D) is at: /home/varoquau/nilearn_data/haxby2001/subj1/anat.nii.gz
-    First subject functional nifti image (4D) is at: /home/varoquau/nilearn_data/haxby2001/subj1/bold.nii.gz
+    First subject anatomical nifti image (3D) is at: /home/lesteve/nilearn_data/haxby2001/subj1/anat.nii.gz
+    First subject functional nifti image (4D) is at: /home/lesteve/nilearn_data/haxby2001/subj1/bold.nii.gz
+    Downloading data from http://brainomics.cea.fr/localizer/brainomics_data_anats.zip ...
+    ...done. (24 seconds, 0 min)
+    Extracting data from /home/lesteve/nilearn_data/brainomics_localizer/ba171bb3430c62bfd0d7b6ead86fbded/brainomics_data_anats.zip...
+       ...done.
 
 
 **Python source code:** :download:`plot_demo_plotting.py <plot_demo_plotting.py>`
@@ -55,6 +59,6 @@ see :ref:`plotting` for more details.
 .. literalinclude:: plot_demo_plotting.py
     :lines: 8-
 
-**Total running time of the example:**  6.43 seconds
-( 0 minutes  6.43 seconds)
+**Total running time of the example:**  30.41 seconds
+( 0 minutes  30.41 seconds)
     
